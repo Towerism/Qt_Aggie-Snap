@@ -14,7 +14,6 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::createMenuFunctionality() {
-
     connect(ui->action_Open_Image, SIGNAL(triggered()), this, SLOT(showNotImplemented()));
     connect(ui->action_Download_Image, SIGNAL(triggered()), this, SLOT(showNotImplemented()));
     connect(ui->action_Quit, SIGNAL(triggered()), this, SLOT(close()));
@@ -33,7 +32,6 @@ void MainWindow::showNotImplemented() {
 }
 
 void MainWindow::increaseLibrarySlider(int value) {
-    std::cout << "hi there";
     QSlider* slider = ui->librarySlider;
     slider->setValue(slider->value() + value);
 }
