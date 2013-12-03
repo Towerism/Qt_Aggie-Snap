@@ -15,8 +15,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void showNotImplemented();
+
 private:
     Ui::MainWindow *ui;
+    void createMenuFunctionality();
 };
 
 #endif // MAINWINDOW_H
