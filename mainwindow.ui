@@ -41,7 +41,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSlider" name="horizontalSlider">
+       <widget class="QSlider" name="librarySlider">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -126,10 +126,22 @@
    <property name="text">
     <string>&amp;Open Image...</string>
    </property>
+   <property name="statusTip">
+    <string>Browse for an image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
   </action>
   <action name="action_Download_Image">
    <property name="text">
     <string>&amp;Download Image...</string>
+   </property>
+   <property name="statusTip">
+    <string>Download an image from URL</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
   <action name="action_Quit">
@@ -147,15 +159,30 @@
    <property name="text">
     <string>&amp;Filter Images...</string>
    </property>
+   <property name="statusTip">
+    <string>Filter image library by tag</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
   </action>
   <action name="action_Delete_Image">
    <property name="text">
     <string>&amp;Delete Image</string>
    </property>
+   <property name="statusTip">
+    <string>Delete the current image from the library</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Del</string>
+   </property>
   </action>
   <action name="action_About_AgSnap">
    <property name="text">
     <string>About Aggie Snap</string>
+   </property>
+   <property name="statusTip">
+    <string>About the program</string>
    </property>
   </action>
  </widget>
